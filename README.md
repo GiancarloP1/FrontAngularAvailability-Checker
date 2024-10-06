@@ -1,27 +1,50 @@
-# AvailabilityChecker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+# 🏨 Availability Checker 💼
 
-## Development server
+¡Bienvenido al proyecto **Availability Checker**! Este proyecto es una aplicación web creada con **Angular** y estilizada con **TailwindCSS**. La aplicación te permite seleccionar fechas y consultar la disponibilidad de habitaciones.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Inicialización del Proyecto
 
-## Code scaffolding
+### 1. Clona el repositorio en tu máquina local 🖥️
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Primero, clona este repositorio usando Git:
 
-## Build
+```bash
+git clone https://github.com/tu-usuario/availability-checker.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 2. Navega al directorio del proyecto 📂
 
-## Running unit tests
+Cambia al directorio donde has clonado el proyecto:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+cd availability-checker
+```
 
-## Running end-to-end tests
+### 3. Instala las dependencias 📦
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Asegúrate de que tienes **Node.js** instalado en tu máquina. Luego, ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
-## Further help
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 4. Levanta el servidor de desarrollo 🚀
+
+Inicia el servidor de desarrollo de Angular para ver la aplicación en acción:
+
+```bash
+ng serve
+```
+
+La aplicación estará disponible en `http://localhost:4200` 🌐. Abre esta URL en tu navegador para ver el proyecto en funcionamiento.
+
+## 📅 Características
+
+- **Selección de Fechas**: Selecciona un rango de fechas para ver la disponibilidad de habitaciones.
+- **Lista de Habitaciones**: Muestra habitaciones disponibles con detalles como el tipo de habitación y fechas de disponibilidad.
+- **Estilo Moderno**: Diseñado con **TailwindCSS** para un look profesional y limpio.
+
+## 🎨 Estilo y Animaciones
+
+Este proyecto utiliza **TailwindCSS** 

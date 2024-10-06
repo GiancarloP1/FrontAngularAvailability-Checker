@@ -1,0 +1,86 @@
+<div class="min-h-screen bg-gray-50">
+  <!-- Header / Navigation -->
+  <header class="bg-white shadow-md p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-semibold text-gray-700">🏨 Availability Checker </h1>
+      <ul class="flex space-x-6 text-gray-600">
+        <li><a href="#" class="hover:text-gray-900">Home</a></li>
+        <li><a href="#" class="hover:text-gray-900">About</a></li>
+        <li><a href="#" class="hover:text-gray-900">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto py-12 px-6">
+    <!-- Date Picker Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-700">Select Dates to Check Availability 📅</h2>
+      <div class="flex justify-center">
+        <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
+          <input
+            class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+            type="date"
+            [(ngModel)]="selectedStartDate"
+            placeholder="Start Date"
+          />
+          <input
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+            type="date"
+            [(ngModel)]="selectedEndDate"
+            placeholder="End Date"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Table Section -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-700">Sample Data of Room Availability 🛏️</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow-md rounded-lg">
+          <thead class="bg-gray-100 text-gray-600">
+            <tr>
+              <th class="py-3 px-4 text-left">Room</th>
+              <th class="py-3 px-4 text-left">Type</th>
+              <th class="py-3 px-4 text-left">Available From</th>
+              <th class="py-3 px-4 text-left">Available Until</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="py-3 px-4 text-gray-700">Room 101</td>
+              <td class="py-3 px-4 text-gray-700">Single</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-07</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-15</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4 text-gray-700">Room 102</td>
+              <td class="py-3 px-4 text-gray-700">Double</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-10</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-20</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4 text-gray-700">Room 201</td>
+              <td class="py-3 px-4 text-gray-700">Suite</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-08</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-18</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4 text-gray-700">Room 301</td>
+              <td class="py-3 px-4 text-gray-700">Penthouse</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-12</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-22</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4 text-gray-700">Room 401</td>
+              <td class="py-3 px-4 text-gray-700">Family Suite</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-15</td>
+              <td class="py-3 px-4 text-gray-700">2024-10-25</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
